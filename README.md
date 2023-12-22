@@ -70,11 +70,11 @@ $parliamentseats=\beta_0+\beta_1 x_1 x femalesecondaryeducation$
 
 Model 1 is a simple linear regression of % of seats held by women in the parliament on female secondary education rate. The regression table can be found at **Appendix A1**. According to the $\beta_1$ of the model, females with secondary education have 7.01% more probability, on average, to earn seats in the parliament. Approximately 2.9% of the variation in the percentage of seats held by women in parliament can be explained by the variation in female secondary education rate. The CI of the slope is [0.008;0.132] which does not include zero, meaning that we can be 95% confident that the true effect of the female secondary education rate on the percentage of seats held by women in parliament is between 0.8% and 13.2%. The p-value < 0.05 also proves the above statement.
 
-<center> <img width="397" alt="image" src="https://github.com/zsofiarebeka/DA2_Final-term/assets/144313188/60aa1866-1fcd-4854-b40a-dd5bce023f90"><\center> 
+<img width="397" alt="image" src="https://github.com/zsofiarebeka/DA2_Final-term/assets/144313188/60aa1866-1fcd-4854-b40a-dd5bce023f90">
 
 To identify a potential nonlinear relationship, I created a regression graph with the lowess method. (**Appendix A2**) According to the chart, there is a slight decrease in the seats between 20% and 40% of female secondary education rate, which is not visible in the simple linear regression.
 
-<center> <img width="533" alt="image" src="https://github.com/zsofiarebeka/DA2_Final-term/assets/144313188/15c2bc8e-3290-4884-8037-13ae98abbcdc"><\center> 
+<img width="533" alt="image" src="https://github.com/zsofiarebeka/DA2_Final-term/assets/144313188/15c2bc8e-3290-4884-8037-13ae98abbcdc">
 
 ### Model 2: % of seats held by women in the parliament on female secondary education rate and GII (z1)
 
@@ -82,7 +82,7 @@ $parliamentseats=\beta_0 + \beta_1 femalesecondaryeducation + \beta_2 GII$
 
 The second model studies how the female secondary education and the Gender Inequality Index combined have an overall impact on the seats held in the parliament. (**Appendix B1**) All covariates are significant at 99%. $\beta_1$ of this model indicates that for a one-unit increase in female secondary education rates, and while holding the GII constant, the model predicts a decrease in the percentage of seats held by women in parliament by 0.208 units. The CI of the slope is [-0.295;-0.121] not including zero. Conditioning on z1, $\beta_2$ shows that for a one-unit increase in the GII, and while holding female secondary education constant, the model predicts a decrease in the percentage of seats held by women in parliament by 52.114 units. The two variables' CIs don't overlap, suggesting a statistically significant difference. The robust SE of this coefficient is significantly higher (6.409) than the SE of $\beta_1$, meaning that it might be less reliable or more sensitive to variations in the data compared to $\beta_1$. R-squared is 0.267, meaning that by taking GII into consideration, we increase the model's goodness of fit. To identify further potential nonlinear relationships, I analyzed the second model with a lowess method and found a similar pattern to Model 1 (decrease between 20% and 40%). (**Appendix B2**)
 
-<center> <img width="551" alt="image" src="https://github.com/zsofiarebeka/DA2_Final-term/assets/144313188/a7a3f254-6c97-45cd-b7cb-c6e86ead0c50"><\center> 
+<img width="551" alt="image" src="https://github.com/zsofiarebeka/DA2_Final-term/assets/144313188/a7a3f254-6c97-45cd-b7cb-c6e86ead0c50">
 
 ### Model 3: % of seats held by women in the parliament on female secondary education rate and female labour force rate (z2)
 
@@ -96,11 +96,11 @@ $parliamentseats=\beta_0 + \beta_1 femalesecondaryeducation + \beta_2 GII + \bet
 
 This model challenges the assumptions about the direct relationships between all the variables and their correlation between parliament seats. (**Appendix C1**) All covariates are significant at 99%. $\beta_1$ indicates that the model predicts a 1.4% increase in the percentage of seats held by women in parliament considering female secondary education. The confidence interval of the slope is [-0.259;-0.088] which does not include zero. None of the confidence intervals overlap, indicating a statistically significant difference between the variables. (**Appendix C2**) This particular regression model exhibits the highest R-squared value among all the examined models, indicating the strongest explanatory power in explaining the variation (0.299). This means that by taking all the variables into consideration, we increase our model's goodness of fit.
 
-<center> <img width="439" alt="image" src="https://github.com/zsofiarebeka/DA2_Final-term/assets/144313188/b6fc7cd1-b35d-40cd-8c6f-fd6b5a22f4e2"><\center> 
+<img width="439" alt="image" src="https://github.com/zsofiarebeka/DA2_Final-term/assets/144313188/b6fc7cd1-b35d-40cd-8c6f-fd6b5a22f4e2">
 
 To broaden the scope of understanding gender disparities, **Appendix D** shows a distribution of parliament seats by the Human Development Index (HDI). My expectations were skewed distributions with right long tails, but surprisingly, distributions for all HDI categories are normal, only slightly skewed to the right as the HDI level increases.
 
-<center> <img width="468" alt="image" src="https://github.com/zsofiarebeka/DA2_Final-term/assets/144313188/bf374086-2f70-42de-ae27-2c4eee7a9538"><\center> 
+<img width="468" alt="image" src="https://github.com/zsofiarebeka/DA2_Final-term/assets/144313188/bf374086-2f70-42de-ae27-2c4eee7a9538">
 
 ## 4. Probability calculation
 
